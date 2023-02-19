@@ -1,0 +1,523 @@
+<html style="overflow: auto; height: 100%; border: none; padding: 0px; margin: 0px;"><head>
+    <!-- コピーライト -->
+    <meta name="copyright" content="All Rights Reserved, Copyright(C) 2016, 2017, ALC EDUCATION INC.">
+    <meta name="copyright" content="All Rights Reserved, Copyright(C) 2016, 2017, Hitachi, Ltd.">
+    <!-- 検索エンジンのクローラーの制御 -->
+    <meta name="robots" content="noindex,nofollow">
+    <!-- IE(8+)に対して，最も互換性の高い最新エンジンを使用するようにしています。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- エンコーディングを記述します。 -->
+    <meta charset="utf-8">
+    <!-- ページのタイトルを記述します。 -->
+    <title>ALC NetAcademy NEXT Student</title>
+    <!-- モバイル端末への対応。
+         ページをビューポートの幅に合わせてレンダリングする指定にします。
+        （Android, iOS6以降） -->
+    <meta name="viewport" content="width=1280, minimum-scale=0.01">
+    <!-- スタイルシートを記述します。
+        スタイルシートは早めにレンダリングされるため，
+        HTML ドキュメントの上方に記述します。 -->
+    <link href="assets2/themes/jquery-ui.structure.css" rel="stylesheet">
+    <link href="assets2/themes/jquery-ui.theme.css" rel="stylesheet">
+    <link href="assets2/themes/swiper.css" rel="stylesheet">
+    <link href="assets2/themes/contents.css" rel="stylesheet">
+    <link href="assets2/themes/contents-mobile.css" rel="stylesheet" id="nan-style-mobile">
+
+    <!-- IEのイメージツールバーを無効にます。 -->
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- href属性にファビコンファイルの URI を記述します。 -->
+    <link rel="shortcut icon" href="assets2/themes/images/favicon.ico">
+    <!-- for B&C -->
+    <script type="text/javascript" src="bros/scripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        var $js10 = $.noConflict(true);
+    </script>
+<style type="text/css">* {<br>		-webkit-user-select: text !important;<br>		-moz-user-select: text !important;<br>		-ms-user-select: text !important;<br>		 user-select: text !important;<br>	}</style><style type="text/css">* {<br>        -webkit-user-select: text !important;<br>        -moz-user-select: text !important;<br>        -ms-user-select: text !important;<br>         user-select: text !important;<br>    }</style></head>
+<body oncontextmenu="return false;" oncopy="return false;" class="ui-layout-container" style="overflow: hidden; width: auto; height: auto; margin: 0px; position: absolute; inset: 0px;" cz-shortcut-listen="true">
+    <!-- flash が動作しなくなります。
+    onmousedown="return false;" ドラッグ防止
+    -->
+
+    <!--
+        Menu
+    -->
+
+    <div id="wheel_menu_blocker"></div>
+    <div id="wheelnav_menu"></div>
+
+    <!--
+        Headers
+    -->
+    <div id="nan-mainframe-header" class="ui-layout-pane ui-layout-pane-north" style="position: absolute; margin: 0px; inset: 0px 0px auto; width: auto; z-index: 0; height: 40px; display: block; visibility: visible;">
+        <!-- header -->
+        <div id="nan-mainframe-header-courseinfo">
+            <div>
+                <div class="nan-mainframe-header-courseinfo-small" data-bind="html: course_names">PowerWords Hybridコース</div>
+                <div class="nan-mainframe-header-courseinfo-small" data-bind="html: subcourse_names">LEVEL03</div>
+                <div class="nan-mainframe-header-courseinfo-large" data-bind="html: header_title">UNIT003 - ドリル</div>
+            </div>
+        </div>
+        <div id="nan-mainframe-header-tools">
+            <a id="nan-mainframe-header-tools-quit"></a>
+        </div>
+        <div id="nan-mainframe-header-logo">
+        </div>
+        <div class="nan-clear"></div>
+    </div>
+    <!--
+        Contents
+    -->
+    <div id="nan-mainframe-contents" class="ui-layout-pane ui-layout-pane-center ui-layout-pane-hover ui-layout-pane-center-hover ui-layout-pane-open-hover ui-layout-pane-center-open-hover" style="position: absolute; margin: 0px; inset: 39px 0px 0px; height: 1333px; width: 2544px; z-index: 0; display: block; visibility: visible;">
+        <!-- cover -->
+        <div id="nan-contents-cover" class="nan-shiftable-panel" style="display: none;">
+            <div id="nan-contents-cover-contants" data-bind="css: {'nan-multi-sections': $data.section_total &amp;&amp; section_total() > 1}">
+                <div class="ui-layout-content">
+                    <div class="nan-cover-area">
+                        <div class="nan-cover-cource">
+                            <div class="nan-cover-title-table">
+                                <div>
+                                    <div class="nan-cover-title-cell-ja"><label data-bind="html: course_names().ja">PowerWords Hybridコース</label></div>
+                                    <div class="nan-cover-title-cell-en"><label data-bind="html: course_names().en">PowerWords Hybrid Course</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nan-cover-subcource">
+                            <div class="nan-cover-title-table">
+                                <div>
+                                    <div class="nan-cover-title-cell-ja"><label data-bind="html: subcourse_names().ja">LEVEL03</label></div>
+                                    <div class="nan-cover-title-cell-en"><label data-bind="html: subcourse_names().en"></label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nan-cover-unittilte">
+                            <div class="nan-cover-title-table">
+                                <div>
+                                    <div class="nan-cover-title-cell-ja"><label data-bind="html: unit_titles().ja">UNIT003</label></div>
+                                    <div class="nan-cover-title-cell-en"><label data-bind="html: unit_titles().en"></label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nan-cover-typename">
+                            <div class="nan-cover-title-table">
+                                <div>
+                                    <div class="nan-cover-title-cell-ja"><label data-bind="html: unit_types().ja">ドリル</label></div>
+                                    <div class="nan-cover-title-cell-en"><label data-bind="html: unit_types().en">Drill</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="nan-cover-titleImage" data-bind="attr:{src: unit_cover_image}" draggable="false" src="">
+                        <div class="nan-cover-video" data-bind="visible: unit_cover_video" style="display: none;">
+                            <video class="nan-video" id="nan-cover-titleVideo" controls="" autoplay="" playsinline="true" webkit-playsinline="true" data-bind="attr: {src: unit_cover_video}" src="" x-webkit-wirelessvideoplaybackdisabled="true" x-webkit-airplay="deny"></video>
+                        </div>
+                        <div data-bind="html: unit_cover_free"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="nan-contents-cover-buttons">
+                <div class="ui-layout-content">
+                    <div class="nan-cover-area" data-bind="if: !$data.section_total || section_total() == 1,
+                                    visible: !$data.section_total || section_total() == 1">
+                        <!--単一セクション(通常セクション)-->
+                        <button class="nan-button-action ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary" data-bind="button: {
+                                                icons: {secondary: 'nan-ui-icon-circle-triangle-e'},
+                                                disabled: starting_unit
+                                            },
+                                            click: begin" role="button"><span class="ui-button-text">
+                            START
+                        </span><span class="ui-button-icon-secondary ui-icon nan-ui-icon-circle-triangle-e"></span></button>
+                    </div>
+                    <div class="nan-cover-area nan-sections" data-bind="if: $data.section_total &amp;&amp; section_total() > 1,
+                                    visible: $data.section_total &amp;&amp; section_total() > 1" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- material -->
+        <div id="nan-contents-material" class="nan-shiftable-panel ui-layout-container ui-tabs ui-widget ui-widget-content ui-corner-all" style="display: block; overflow: hidden; position: relative;">
+            <div class="ui-layout-north ui-layout-pane ui-layout-pane-north" id="nan-contents-material-navs" style="position: absolute; margin: 0px; inset: 0px 0px auto; width: auto; z-index: 0; height: 43px; display: block; visibility: visible;">
+                <!-- セクションの疑似タブ表現 refs #2080 -->
+                <div class="nan-sections-nav" data-bind="if: $data.section_total &amp;&amp; section_total() > 1,
+                                visible: $data.section_total &amp;&amp; section_total() > 1" style="display: none;"></div>
+                <ul data-bind="css: {'nan-section': $data.section_total &amp;&amp; section_total() > 1},
+                                visible: !($data.section_total &amp;&amp; section_total() > 1 &amp;&amp; isTestUnit() &amp;&amp; endTest())" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                    
+                    <!-- ko foreach: steps -->
+                    <li data-bind="attr: {id: id}" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="ui-id-3" aria-labelledby="ui-id-2" aria-selected="true" aria-expanded="true">
+                        <a data-bind="attr: {href: href}, text: name" draggable="false" href="assets2/fragments/04.htm" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">STEP01</a>
+                    </li>
+                    
+                    <li data-bind="attr: {id: id}" class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-5" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false">
+                        <a data-bind="attr: {href: href}, text: name" draggable="false" href="assets2/fragments/09.htm" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">STEP02</a>
+                    </li>
+                    
+                    <li data-bind="attr: {id: id}" class="ui-state-default ui-corner-top ui-state-disabled" role="tab" tabindex="-1" aria-controls="ui-id-7" aria-labelledby="ui-id-6" aria-selected="false" aria-expanded="false" aria-disabled="true">
+                        <a data-bind="attr: {href: href}, text: name" draggable="false" href="assets2/fragments/01.htm" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">STEP03</a>
+                    </li>
+                    
+                    <li data-bind="attr: {id: id}" class="ui-state-default ui-corner-top ui-state-disabled" role="tab" tabindex="-1" aria-controls="ui-id-9" aria-labelledby="ui-id-8" aria-selected="false" aria-expanded="false" aria-disabled="true">
+                        <a data-bind="attr: {href: href}, text: name" draggable="false" href="assets2/fragments/03.htm" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">STEP04</a>
+                    </li>
+                    <!-- /ko -->
+                    <li data-bind="visible: !isTestUnit() &amp;&amp; !isBlacklistDrill()" id="nan-contents-material-tools-help">
+                        &nbsp;
+                    </li>
+                </ul>
+            </div>
+            <div class="ui-layout-center ui-layout-pane ui-layout-pane-center ui-layout-pane-hover ui-layout-pane-center-hover ui-layout-pane-open-hover ui-layout-pane-center-open-hover" style="position: absolute; margin: 0px; inset: 42px 229px 0px 0px; height: 1291px; width: 2315px; z-index: 0; display: block; visibility: visible;">
+                <div id="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom nan-step-fragment ui-layout-container" aria-live="polite" aria-labelledby="ui-id-2" role="tabpanel" aria-hidden="false" style="display: block; overflow: hidden; position: relative;"><!--
+All Rights Reserved, Copyright(C) 2016, 2017, ALC EDUCATION INC.
+All Rights Reserved, Copyright(C) 2016, 2017, Hitachi, Ltd.
+-->
+
+<div class="ui-layout-center ui-layout-pane ui-layout-pane-center ui-layout-pane-hover ui-layout-pane-center-hover ui-layout-pane-open-hover ui-layout-pane-center-open-hover" style="position: absolute; margin: 0px; inset: 0px; height: 1291px; width: 2315px; z-index: 0; display: block; visibility: visible;">
+    <!-- questions -->
+    <div id="nan-endless-drill" class="nan-shiftable-panel nan-step-fragment ui-layout-container" style="display: none; overflow: hidden; position: relative;">
+
+        <div class="ui-layout-north nan-step-direction ui-layout-pane ui-layout-pane-north" style="position: absolute; margin: 0px; inset: 0px 0px auto; width: auto; z-index: 0; height: 124px; display: none; visibility: visible;">
+            <div class="nan-step-direction-professor ui-layout-ignore"></div>
+            <div class="ui-layout-content" style="position: relative;">
+                <div class="nan-step-direction-sentence" data-bind="html: directions">単語の意味を英語と日本語のセットで覚えているか、ドリル形式で確認しましょう。英単語が出題されたら日本語訳を、日本語が出題されたらその意味を表す英単語を選んでください。英日・日英両方の形式で正解するまでドリルは続きます。出題は10単語分です。</div>
+            </div>
+            <a class="nan-step-direction-closer ui-layout-ignore"></a>
+        </div>
+
+        <div class="ui-layout-center ui-layout-pane ui-layout-pane-center" style="position: absolute; margin: 0px; inset: 0px 0px 63px; height: 1228px; width: 2315px; z-index: 0; overflow: hidden; display: block; visibility: visible;">
+            <div class="ui-layout-content nan-vocabulary-drill-content" style="position: relative; height: 1228px; visibility: visible;">
+                <div class="nan-endless">
+                    <div id="nan-endless-inline" style="">
+                        <span data-bind="html: question" style="font-size: 98px; line-height: 1.2em;">grandchild</span>
+                    </div>
+                </div>
+                <div id="nan-endless-answer-column" data-bind="with: choices" class="">
+                    <button id="nan-choice-0" type="button" data-bind="button: {label: choice0, disabled: $root.disabledChoice0}, click: click" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">おい</span></button>
+                    <button id="nan-choice-1" type="button" data-bind="button: {label: choice1, disabled: $root.disabledChoice1}, click: click" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">孫</span></button>
+                </div>
+            </div>
+
+            <div id="nan-endless-answer-overlay" class="nan-invisible">
+            </div>
+        </div>
+
+        <div class="ui-layout-south ui-layout-pane ui-layout-pane-south" style="position: absolute; margin: 0px; inset: auto 0px 0px; width: auto; z-index: 0; height: 64px; display: block; visibility: visible;">
+            <div id="nan-endless-progress" class="nan-progress ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="20" aria-valuenow="20"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right" style="display: block; width: 100%;"></div></div>
+        </div>
+    <div title="Slide Open" id="" class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-closed ui-layout-resizer-north-closed" style="cursor: pointer; position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; top: 0px; display: none;"><div id="" class="ui-layout-toggler ui-layout-toggler-north ui-layout-toggler-closed ui-layout-toggler-north-closed" title="Open" style="position: absolute; display: block; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1; visibility: visible;"></div></div><div id="" class="ui-layout-resizer ui-layout-resizer-south ui-draggable-handle ui-layout-resizer-open ui-layout-resizer-south-open" title="Resize" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; cursor: s-resize; bottom: 64px; width: 2315px; height: 0px; left: 0px;"></div></div>
+
+    <!-- result -->
+    <div id="nan-endless-results" class="nan-shiftable-panel nan-step-fragment ui-layout-container" style="display: block; overflow: hidden; position: relative;">
+
+        <div class="ui-layout-north nan-step-direction ui-layout-pane ui-layout-pane-north" style="position: absolute; margin: 0px; inset: 0px 0px auto; width: auto; z-index: 0; height: 124px; display: table; visibility: visible;">
+            <div class="nan-step-direction-professor ui-layout-ignore"></div>
+            <div class="ui-layout-content" style="position: relative;">
+                <div class="nan-step-direction-sentence" data-bind="html: directions">英日・日英語彙ドリルの結果です。単語の発音やつづり、意味を再度確認してから次のSTEPへ進みましょう。</div>
+            </div>
+            <a class="nan-step-direction-closer ui-layout-ignore"></a>
+        </div>
+
+        <div class="ui-layout-center ui-layout-pane ui-layout-pane-center ui-layout-pane-hover ui-layout-pane-center-hover ui-layout-pane-open-hover ui-layout-pane-center-open-hover" style="position: absolute; margin: 0px; inset: 124px 0px 0px; height: 1167px; width: 2315px; z-index: 0; overflow: hidden; display: block; visibility: visible;">
+            <div class="ui-layout-content nan-step-content" id="nan-endless-results-content" style="position: relative; height: 1091px; visibility: visible;">
+                <table class="table" id="nan-endless-results-table">
+                    <caption>結果一覧</caption>
+                    <thead>
+                        <tr class="ui-widget-header">
+                            <th>No.</th>
+                            <th>音声 / Voice</th>
+                            <th>語句 / Vocabulary</th>
+                            <th>日本語訳 / Japanese</th>
+                            <th>英日出題回数<br>/ English-Japanese</th>
+                            <th>日英出題回数<br>/ Japanese-English</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: results">
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">1.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="1" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">found</td>
+                            <td data-bind="html: ja">～を創立する</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">2.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="2" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">principle</td>
+                            <td data-bind="html: ja">原則</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">3.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="3" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">equally</td>
+                            <td data-bind="html: ja">平等に</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">4.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="4" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">population</td>
+                            <td data-bind="html: ja">人口</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">5.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="5" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">gradually</td>
+                            <td data-bind="html: ja">徐々に</td>
+                            <td data-bind="text: answerCountEnja">1</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">6.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="6" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">decrease</td>
+                            <td data-bind="html: ja">～を減少させる</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">7.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="7" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">pity</td>
+                            <td data-bind="html: ja">同情</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">8.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="8" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">parking</td>
+                            <td data-bind="html: ja">駐車</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">9.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="9" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">northern</td>
+                            <td data-bind="html: ja">北の</td>
+                            <td data-bind="text: answerCountEnja">1</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: ($index() + 1 + '.')">10.</td>
+                            <td>
+                                <div class="nan-voicebox">
+                                    <button class="nan-voicebox-play nan-button-tool nan-button-tool-small ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-bind="attr:{'data-nan-voicebox-key': voiceKey}, button: {icons: {primary: 'nan-ui-icon-volume-on'}, text: false}" data-nan-voicebox-key="10" role="button" title=""><span class="ui-button-icon-primary ui-icon nan-ui-icon-volume-on"></span><span class="ui-button-text"></span></button>
+                                </div>
+                            </td>
+                            <td data-bind="html: en">grandchild</td>
+                            <td data-bind="html: ja">孫</td>
+                            <td data-bind="text: answerCountEnja">2</td>
+                            <td data-bind="text: answerCountJaen">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="nan-toolbox-content">
+        </div>
+
+    <div title="" id="" class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-open ui-layout-resizer-north-open" style="cursor: default; position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; top: 124px; display: none;"><div id="" class="ui-layout-toggler ui-layout-toggler-north ui-layout-toggler-open ui-layout-toggler-north-open" title="Close" style="position: absolute; display: block; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; cursor: pointer; z-index: 1; visibility: visible;"></div></div></div>
+
+</div>
+</div><div id="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-4" role="tabpanel" aria-hidden="true" style="display: none;"></div><div id="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-6" role="tabpanel" aria-hidden="true" style="display: none;"></div><div id="ui-id-9" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-8" role="tabpanel" aria-hidden="true" style="display: none;"></div>
+            </div>
+            <div id="nan-toolbox" class="ui-layout-east ui-layout-pane ui-layout-pane-east" style="position: absolute; margin: 0px; inset: 42px 0px 0px auto; height: 1291px; z-index: 0; overflow: hidden; width: 230px; display: block; visibility: visible;">
+                <div id="nan-toolbox-header" class=" nan-toolbox-header">
+                    <button class="nan-toolbox-margin nan-directions ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary" data-bind="click: fragment.perform" name="toggleDescription" role="button"><span class="ui-button-icon-primary ui-icon nan-ui-cion-info"></span><span class="ui-button-text">Directions</span></button>
+                    <div class="nan-toolbox-gup">&nbsp;</div>
+                </div>
+                <div id="nan-unit-timer" class="nan-invisible"></div>
+                <div id="nan-toolbox-content" class="ui-layout-content" style="position: relative; height: 1107px; visibility: visible;"></div>
+                <div id="nan-toolbox-footer" class="nan-toolbox-footer">
+                    <button class="nan-button-action nan-toolbox-margin nan-nextstep ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary" data-bind="button: { icons: {secondary: 'nan-ui-icon-circle-triangle-e'}, label: contents.label }, visible: fragment.done, click: contents.perform" name="nextStep" style="" role="button"><span class="ui-button-text">NEXT STEP</span><span class="ui-button-icon-secondary ui-icon nan-ui-icon-circle-triangle-e"></span></button>
+                    <div class="nan-toolbox-gup"><!-- マージン調整 --></div>
+                </div>
+            </div>
+            <div class="ui-layout-south ui-layout-pane ui-layout-pane-south" style="position: absolute; margin: 0px; inset: auto 0px 0px; width: auto; z-index: 0; overflow: hidden; height: 44px; display: none; visibility: visible;">
+                <div class="ui-layout-content nan-pagination-container" style="position: relative; height: 24px;">
+                    <ul class="nan-pagination">&nbsp;</ul>
+                    <div class="nan-clear"></div>
+                </div>
+            </div>
+        <div id="" class="ui-layout-resizer ui-layout-resizer-north ui-draggable-handle ui-layout-resizer-open ui-layout-resizer-north-open" title="Resize" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; cursor: n-resize; top: 43px; width: 2544px; height: 0px; left: 0px;"></div><div id="" class="nan-contents-pagination-resizer nan-contents-pagination-resizer-south nan-contents-pagination-resizer-closed nan-contents-pagination-resizer-south-closed" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; bottom: 0px; display: none;"></div><div id="" class="ui-layout-resizer ui-layout-resizer-east ui-draggable-handle ui-layout-resizer-open ui-layout-resizer-east-open" title="Resize" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; cursor: e-resize; right: 230px; height: 1291px; width: 0px; top: 42px;"></div></div>
+    </div>
+
+    <div id="nan-mainframe-footer" class="nan-invisible ui-layout-pane ui-layout-pane-south" style="position: absolute; margin: 0px; inset: auto 0px 0px; width: auto; z-index: 0; height: 38px; display: none; visibility: visible;">
+        <!-- スマホ用ツールボックス -->
+        <div id="nan-toolbox-mobile" class="nan-toolbox-mobile">
+            <div id="nan-toolbox-mobile-body" class="nan-invisible">
+                <div id="nan-toolbox-mobile-directions">
+                    <button class="nan-toolbox-margin nan-directions" data-bind="click: fragment.perform" name="toggleDescription">
+                         <!-- Directions  -->
+                    </button>
+                </div>
+                <div id="nan-toolbox-mobile-body-content"></div>
+            </div>
+            <!-- -->
+            <div id="nan-toolbox-mobile-header">
+                <!-- 表示切替 -->
+                <div id="nan-toolbox-mobile-toggle">
+                    <button class="nan-directions" data-bind="click: fragment.perform" name="toggleMobileToolbox"></button>
+                </div>
+                <!-- タイマー -->
+                <div id="nan-toolbox-mobile-timer" class="nan-toolbox-timer nan-invisible"></div>
+                <div id="nan-toolbox-mobile-header-content" class="nan-toolbox-content"></div>
+                <div id="nan-toolbox-mobile-next" class="nan-toolbox-footer" data-bind="css: { 'nan-invisible': !fragment.done() }">
+                    <button class="nan-button-action nan-toolbox-margin nan-nextstep nan-mobile-button" data-bind="visible: fragment.done, click: contents.perform, css: contents.css" name="nextStep">
+                        <!-- NEXT STEP -->
+                    </button>
+                </div>
+            </div>
+            <!-- /ko -->
+        </div>
+    </div>
+
+    <!--
+        Scripts
+    -->
+    <!-- libraries for release -->
+    <script src="assets2/lib/scripts/jquery-2.1.4.min.js"></script>
+    <script src="assets2/lib/scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="assets2/lib/scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets2/lib/scripts/jquery.knob.min.js"></script>
+    <script src="assets2/lib/scripts/Chart2.min.js"></script>
+    <script>
+        var Chart2 = Chart; // V1.1以降用(Chart.js 2.x.x)
+        Chart = null;
+    </script>
+    <script src="assets2/lib/scripts/Chart.min.js"></script>
+    <script src="assets2/lib/scripts/jquery.layout_and_plugins.min.js"></script>
+    <script src="assets2/lib/scripts/jquery.layout.callbacks.min-latest.js"></script>
+    <script src="assets2/lib/scripts/jquery.swfobject.1-1-1.min.js"></script>
+    <script src="assets2/lib/scripts/knockout-3.3.0.js"></script>
+    <script src="assets2/lib/scripts/knockout-jqueryui.min.js"></script>
+    <script src="assets2/lib/scripts/swiper.jquery.min.js"></script>
+    <script src="assets2/lib/scripts/raphael.min.js"></script>
+    <script src="assets2/lib/scripts/raphael.icons.min.js"></script>
+    <script src="assets2/lib/scripts/wheelnav.min.js"></script>
+    <!-- Scripts by B&C -->
+    <script type="text/javascript" src="bros/scripts/rejection.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bros/scripts/alcviewer.js"></script>
+    <script type="text/javascript" src="bros/scripts/alcpronounce.js"></script>
+    <!-- Scripts for NAN -->
+    <script src="assets2/scripts/nan-polyfill.js"></script>
+    <script src="assets2/scripts/nan-whellnav.js"></script>
+    <script src="assets2/scripts/nan-bindings.js"></script>
+    <script src="assets2/scripts/nan-dialog.js"></script>
+    <script src="assets2/scripts/nan-message.js"></script>
+    <script src="assets2/scripts/nan-timelimit.js"></script>
+    <script src="assets2/scripts/nan-vocalizer.js"></script>
+    <script src="assets2/scripts/nan-util.js"></script>
+    <script src="assets2/scripts/nan-toolbox.js"></script>
+    <script src="assets2/scripts/nan-toolbox-mobile.js"></script>
+    <script src="assets2/scripts/nan-webrecorder.js"></script>
+    <script src="assets2/scripts/nan-vocalizer-webaudio.js"></script>
+    <script src="assets2/scripts/nan-course.js"></script>
+    <script src="assets2/scripts/nan-pollingtimer.js"></script>
+    <script src="assets2/scripts/nan-dialog-target.js"></script>
+    <script src="assets2/scripts/nan-dialog-target-mobile.js"></script>
+    <script src="assets2/scripts/nan-explanation.js"></script>
+    <script src="assets2/scripts/nan-explanation-ex.js"></script>
+    <script src="assets2/scripts/nan-capabilities.js"></script>
+    <script src="assets2/scripts/nan-mainframe.js"></script>
+    <script src="assets2/scripts/nan-pagination.js"></script>
+    <script src="assets2/scripts/nan-step.js"></script>
+    <script src="assets2/scripts/nan-step-answersheet.js"></script>
+    <script src="assets2/scripts/nan-step-answersheet-ex.js"></script>
+    <script src="assets2/scripts/nan-step-flashcard.js"></script>
+    <script src="assets2/scripts/nan-step-practice.js"></script>
+    <script src="assets2/scripts/nan-step-practice-ad.js"></script>
+    <script src="assets2/scripts/nan-step-practice-ex.js"></script>
+    <script src="assets2/scripts/nan-step-qa.js"></script>
+    <script src="assets2/scripts/nan-step-tocorrect.js"></script>
+    <script src="assets2/scripts/nan-step-vss.js"></script>
+    <script src="assets2/scripts/nan-step-readaloud.js"></script>
+    <script src="assets2/scripts/nan-step-repeating.js"></script>
+    <script src="assets2/scripts/nan-step-roleplay.js"></script>
+    <script src="assets2/scripts/nan-step-slashlistening.js"></script>
+    <script src="assets2/scripts/nan-step-slashreading.js"></script>
+    <script src="assets2/scripts/nan-step-speedlistening.js"></script>
+    <script src="assets2/scripts/nan-step-speedreading.js"></script>
+    <script src="assets2/scripts/nan-step-vocabulary.js"></script>
+    <script src="assets2/scripts/nan-step-target.js"></script>
+    <script src="assets2/scripts/nan-step-qa-simple.js"></script>
+    <script src="assets2/scripts/nan-step-qa-ad.js"></script>
+    <script src="assets2/scripts/nan-step-qa-ex.js"></script>
+    <script src="assets2/scripts/nan-step-wpm.js"></script>
+    <script src="assets2/scripts/nan-step-findword.js"></script>
+    <script src="assets2/scripts/nan-contents.js"></script>
+    <!--
+        Dialogs
+    -->
+    
+    <div id="nan-explanation-dialog">
+    </div>
+    <div id="nan-target-dialog"></div>
+    <div id="nan-flash-vocalizer-outer">
+        <div id="nan-flash-vocalizer"></div>
+    </div>
+    <div id="nan-landscape-warning">学習は縦向きで行ってください。</div>
+
+
+<div id="nan-mainframe-header-resizer" class="ui-layout-resizer ui-layout-resizer-north ui-draggable-handle ui-layout-resizer-open ui-layout-resizer-north-open" title="Resize" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; cursor: n-resize; top: 40px; width: 2544px; height: 0px; left: 0px;"></div><div id="nan-mainframe-footer-resizer" class="ui-layout-resizer ui-layout-resizer-south ui-draggable-handle ui-layout-resizer-closed ui-layout-resizer-south-closed ui-draggable-disabled" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; bottom: 0px; display: none; cursor: default; width: 2544px; height: 0px; left: 0px;" title=""></div><script type="text/javascript">
+		document.oncontextmenu = null;
+		document.onselectstart = null;
+		document.ondragstart = null;
+		document.onmousedown = null;
+		document.body.oncontextmenu = null;
+		document.body.onselectstart = null;
+		document.body.ondragstart = null;
+		document.body.onmousedown = null;
+		document.body.oncut = null;
+		document.body.oncopy = null;
+		document.body.onpaste = null;
+	</script><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front nan-direction-dialog ui-dialog-buttons" tabindex="-1" role="dialog" aria-describedby="nan-dialog" style="height: auto; width: 2560px; top: 521px; left: 895px; display: none; z-index: 101;" aria-labelledby="ui-id-10"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-10" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="nan-dialog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 0px; max-height: none; height: 1109px;">単語の意味を英語と日本語のセットで覚えているか、ドリル形式で確認しましょう。英単語が出題されたら日本語訳を、日本語が出題されたらその意味を表す英単語を選んでください。英日・日英両方の形式で正解するまでドリルは続きます。出題は10単語分です。</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">OK</span></button></div></div></div></body></html>
